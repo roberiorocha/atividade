@@ -1,0 +1,50 @@
+#blocos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    }
+
+    .blocoindividual {
+        padding: 20px;
+        border-radius: 20px;
+        background: violet;
+        transition: all 0.3s ease;
+        }
+
+        .blocoindividual:hover {
+            scale: 0.9;
+            box-shadow: gray 7px 7px 7px;
+            transition: all 0.3s ease;
+            }
+
+/********* CORES *********/
+
+.vermelho {
+    background: red;
+    }
+
+    .vermelho:hover {
+        box-shadow: rgb(148, 1, 1) 10px 10px 10px;
+        }
+
+.verde {
+    background: green;
+    }
+
+.azul {
+    background: blue;
+    }
+
+.amarelo {
+    background: yellow;
+    }
+
+.text-branco {
+    color: white;
+    }
+
+@media only screen and (max-width:700px) {
+    #blocos {
+        grid-template-columns: 1fr 1fr;
+        }
+    }
